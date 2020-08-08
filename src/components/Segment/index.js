@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { mashupSegments } from '../../store';
 
 function Segment(props) {
-  const factor = 18.7;
+  const factor = 19.4;
   const classnames = classNames('Segment', props.pic);
   const style = { backgroundPositionY: `${(props.num - 1) * factor}%` };
   const [state, actions] = mashupSegments();
