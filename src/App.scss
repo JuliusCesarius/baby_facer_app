@@ -29,6 +29,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 
+  .h1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    font-size: 1.2em;
+  }
+
   label {
     font-weight: 600;
     margin-top: 0;
@@ -87,11 +95,60 @@
   display: flex;
 }
 
+.Mashup {
+  position: relative;
+}
+
 .gabi {
   background-image: url("images/mom.png");
 }
 .julius {
   background-image: url("images/dad.png");
+}
+
+.avocado_couple {
+  display: block-inline;
+  background-image: url("images/Avocado_couple.svg");
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 380px;
+  margin: -180px 0 0;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-name: bounce-4;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-4 {
+  0%   { transform: scale(1,1)    translateY(0); }
+  10%  { transform: scale(1.1,.9) translateY(0); }
+  15%  { transform: scale(.9,1.1) translateY(-100px); }
+  20%  { transform: scale(1,1)    translateY(0); }
+  50%  { transform: scale(1,1)    translateY(0); }
+  100% { transform: scale(1,1)    translateY(0); }
+}
+
+.avocado-1 {
+  display: block-inline;
+  background-image: url("images/Avocado_frame_left.svg");
+  background-repeat: no-repeat;
+  height: 720px;
+  width: 400px;
+  position: absolute;
+  left: -20px;
+  bottom: -40px;
+}
+
+.avocado-2 {
+  display: block-inline;
+  background-image: url("images/Avocado_frame_right.svg");
+  background-repeat: no-repeat;
+  height: 720px;
+  width: 400px;
+  position: absolute;
+  right: -20px;
+  bottom: -40px; 
 }
 
 .loteria1{

@@ -6,8 +6,9 @@ import { mashupSegments } from '../../store';
 function Mashup(props) {
   const classes = classNames('Picture');
   const [state, actions] = mashupSegments();
-  return <div>
+  return <div class="Mashup">
     <label>{props.name}</label>
+    <div class="h1">Adivina cómo será</div>
     <div className={classes}>
       <Segment pic={state.segments[1].pic} num={1}/>
       <Segment pic={state.segments[2].pic} num={2}/>
