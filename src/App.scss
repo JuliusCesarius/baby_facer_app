@@ -98,12 +98,107 @@
 .Mashup {
   position: relative;
 }
-
-.gabi {
-  background-image: url("images/mom.png");
+.thumb-container {
+  display: flex;
+  width: 300px;
+  margin: 0 .9em;
+  align-content: space-around;
+  justify-content: center;
+  flex-flow: wrap;
+  position: relative;
 }
-.julius {
-  background-image: url("images/dad.png");
+.thumb {
+  cursor: pointer;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+  margin: 3px;
+  border: none;
+}
+.julius1 {
+  background-image: url("images/dad1.jpg");
+}
+.julius2 {
+  background-image: url("images/dad2.jpg");
+}
+.julius3 {
+  background-image: url("images/dad3.jpg");
+}
+.julius4 {
+  background-image: url("images/dad4.jpg");
+}
+.julius5 {
+  background-image: url("images/dad5.jpg");
+}
+.julius6 {
+  background-image: url("images/dad6.jpg");
+}
+.julius7 {
+  background-image: url("images/dad7.jpg");
+}
+.julius8 {
+  background-image: url("images/dad8.jpg");
+}
+.julius9 {
+  background-image: url("images/dad9.jpg");
+}
+.julius10 {
+  background-image: url("images/dad10.jpg");
+}
+.julius11 {
+  background-image: url("images/dad11.jpg");
+}
+.julius12 {
+  background-image: url("images/dad12.jpg");
+}
+.julius13 {
+  background-image: url("images/dad13.jpg");
+}
+.julius14 {
+  background-image: url("images/dad14.jpg");
+}
+.gabi1 {
+  background-image: url("images/mom1.jpg");
+}
+.gabi2 {
+  background-image: url("images/mom2.jpg");
+}
+.gabi3 {
+  background-image: url("images/mom3.jpg");
+}
+.gabi4 {
+  background-image: url("images/mom4.jpg");
+}
+.gabi5 {
+  background-image: url("images/mom5.jpg");
+}
+.gabi6 {
+  background-image: url("images/mom6.jpg");
+}
+.gabi7 {
+  background-image: url("images/mom7.jpg");
+}
+.gabi8 {
+  background-image: url("images/mom8.jpg");
+}
+.gabi9 {
+  background-image: url("images/mom9.jpg");
+}
+.gabi10 {
+  background-image: url("images/mom10.jpg");
+}
+.gabi11 {
+  background-image: url("images/mom11.jpg");
+}
+.gabi12 {
+  background-image: url("images/mom12.jpg");
+}
+.gabi13 {
+  background-image: url("images/mom13.jpg");
+}
+.gabi14 {
+  background-image: url("images/mom14.jpg");
 }
 
 .avocado_couple {

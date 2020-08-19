@@ -19,7 +19,7 @@ const Store = createStore({
       const segments = getState().segments;
       console.log(segment.num);
       console.log(segment.pic);
-      segments[segment.num] = { pic: segment.pic };
+      segments[segment.num] = { pic: segment.pic, version: segment.version };
       setState({segments});
       console.log(getState());
     },
