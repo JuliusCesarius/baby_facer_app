@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import Segment from '../../components/Segment';
 import { mashupSegments } from '../../store';
 
 function Mashup(props) {
-  const classes = classNames('Picture');
   const [state, actions] = mashupSegments();
-  return <div class="Mashup">
+  const [zoom, setZoom] = useState(false);
+  const zoomClasses = classNames('Picture', {'on': zoom})
+  const onClick = () => {
+    setZoom(!zoom);
+  }
+  return <div className="Mashup">
     <label>{props.name}</label>
-    <div class="h1">Adivina cómo será</div>
-    <div className={classes}>
+    <div className="picture-holder">
+      <div className="h1">Adivina cómo será</div>
+    </div>
+    <div className={`Picture zoom ${zoom ? 'on' : ''}`} onClick={onClick}>
       <Segment pic={state.segments[1].pic} version={state.segments[1].version} num={1}/>
       <Segment pic={state.segments[2].pic} version={state.segments[2].version} num={2}/>
       <Segment pic={state.segments[3].pic} version={state.segments[3].version} num={3}/>

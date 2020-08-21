@@ -17,11 +17,8 @@ const Store = createStore({
     pickSegment: (segment) => ({ setState, getState }) => {
       // mutate state synchronously
       const segments = getState().segments;
-      console.log(segment.num);
-      console.log(segment.pic);
       segments[segment.num] = { pic: segment.pic, version: segment.version };
       setState({segments});
-      console.log(getState());
     },
   },
   // optional, mostly used for easy debugging

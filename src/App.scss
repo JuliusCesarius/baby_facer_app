@@ -57,10 +57,16 @@
 }
 
 .Picture,
+.picture-holder,
 .segments,
 .background {
   width: 300px;
   height: 300px;
+}
+
+.picture-holder {
+  position: relative;
+  margin: 1em;
 }
 
 .Picture {
@@ -73,6 +79,20 @@
       background-size: cover;
       opacity: .3;
     }
+    &.zoom {
+      position: absolute;
+      top: 24px;
+      left: 0;
+      z-index: 10;
+      transition: all .3s;
+      background-color: rgba(171, 193, 120, 0);
+      &.on {
+        transform: translate(-50%, -50%) scale(2);
+        background-color: rgba(171, 193, 120, 1);
+        top: 43%;
+        left: 43%;
+      }
+    }
 }
 
 .segments {
@@ -81,13 +101,15 @@
 }
 
 .Segment {
+  position: relative;
   height: 50px;
   background-position: center;
   background-size: cover;
+  transition: all .3s;
   &:hover {
     cursor: pointer;
-    background-color: white;
-    opacity: .9;
+    box-shadow: 0 0 15px rgba(0, 0, 0,.4);
+    z-index: 1;
   }
 }
 
