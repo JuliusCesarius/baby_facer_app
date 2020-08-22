@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import classNames from 'classnames';
 import Segment from '../../components/Segment';
 import { mashupSegments } from '../../store';
 
 function Mashup(props) {
   const [state, actions] = mashupSegments();
   const [zoom, setZoom] = useState(false);
-  const zoomClasses = classNames('Picture', {'on': zoom})
   const onClick = () => {
     setZoom(!zoom);
   }

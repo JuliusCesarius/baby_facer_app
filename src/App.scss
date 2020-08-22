@@ -268,6 +268,33 @@
   bottom: -40px; 
 }
 
+.card {
+  position: relative;
+  width: 115px;
+  height: 182px;
+  cursor: pointer;
+  &.on {
+    background-image: url("images/bean.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}
+
+.loteria {
+  height: 737px;
+  display: inline-block;
+  width: 469px;
+  background-size: cover;
+  left: 50%;
+  position: absolute;
+  box-shadow: 1px 5px 20px grey;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  display: flex;
+  flex-flow: wrap;
+}
+
 .loteria1{
   background-image: url("images/Loteria01.JPG");
 }
